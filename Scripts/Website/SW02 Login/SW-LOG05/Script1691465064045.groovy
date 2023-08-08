@@ -25,14 +25,14 @@ WebUI.maximizeWindow()
 WebUI.click(findTestObject('Object Repository/Web - Login/Page_Be a Profressional Talent with Coding.ID/a_Masuk'))
 
 WebUI.setText(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Email_email'), 
-    'isya.katalon@gmail.com')
+    '')
 
 WebUI.setText(findTestObject('Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Kata                                 _98da12'), 
-    '')
+    'password')
 
 WebUI.click(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/button_Login'))
 
-WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Kata                                 _98da12'), 
+WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Email_email'), 
         'validationMessage'), 'Please fill out this field.')
 
 WebUI.closeBrowser()
