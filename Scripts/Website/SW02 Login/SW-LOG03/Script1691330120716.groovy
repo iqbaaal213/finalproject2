@@ -34,6 +34,6 @@ WebUI.click(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapat
 
 WebUI.verifyElementText(findTestObject('Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/small_Email atau kata sandi salah'), 
     'Email atau kata sandi salah')
-
+WebUI.takeScreenshot()
 WebUI.closeBrowser()
 

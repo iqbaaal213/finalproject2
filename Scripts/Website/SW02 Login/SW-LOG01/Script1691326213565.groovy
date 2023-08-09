@@ -34,5 +34,7 @@ WebUI.click(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapat
 
 WebUI.click(findTestObject('Object Repository/Web - Login/Page_Be a Profressional Talent with Coding.ID/i_Kontak_fas fa-user-alt'))
 
+WebUI.takeScreenshot()
+
 WebUI.closeBrowser()
 

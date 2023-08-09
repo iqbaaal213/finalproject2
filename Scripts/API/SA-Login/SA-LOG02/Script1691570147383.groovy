@@ -17,23 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://demo-app.online/')
+ResponseLogin = WS.sendRequest(findTestObject('API - Login/SA-LOG02'))
 
-'Maximize current window'
-WebUI.maximizeWindow()
+Value = WS.getElementPropertyValue(ResponseLogin, 'success.token')
 
-WebUI.click(findTestObject('Object Repository/Web - Login/Page_Be a Profressional Talent with Coding.ID/a_Masuk'))
-
-WebUI.setText(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Email_email'), 
-    'isya.katalon@gmail.com')
-
-WebUI.setText(findTestObject('Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Kata                                 _98da12'), 
-    '')
-
-WebUI.click(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/button_Login'))
-
-WebUI.verifyEqual(WebUI.getAttribute(findTestObject('Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Kata                                 _98da12'), 
-        'validationMessage'), 'Please fill out this field.')
-WebUI.takeScreenshot()
-WebUI.closeBrowser()
+println('token: ' + Value)
 

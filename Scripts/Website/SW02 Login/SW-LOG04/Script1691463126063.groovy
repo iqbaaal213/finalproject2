@@ -34,6 +34,6 @@ WebUI.click(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapat
 
 WebUI.verifyMatch(WebUI.getAttribute(findTestObject('Object Repository/Web - Login/Page_Masuk untuk dapatkan akses di Coding.ID/input_Email_email'), 
         'validationMessage'), 'Please include an \'@\' in the email address.*', true)
-
+WebUI.takeScreenshot()
 WebUI.closeBrowser()
 
