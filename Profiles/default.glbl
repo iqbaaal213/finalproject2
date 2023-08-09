@@ -14,4 +14,9 @@
       <initValue>'password'</initValue>
       <name>isya_katalon_password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>APItoken</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
