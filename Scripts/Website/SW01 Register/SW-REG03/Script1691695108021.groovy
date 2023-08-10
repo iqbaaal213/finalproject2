@@ -25,21 +25,26 @@ WebUI.navigateToUrl('https://demo-app.online/')
 
 WebUI.click(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_Buat Akun'))
 
-WebUI.click(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Nama_name'))
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Nama_name'), GlobalVariable.nama_iqbal)
 
-WebUI.click(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Tanggal lahir_birth_date'))
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Tanggal lahir_birth_date'), 
+    '11-08-1953')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_select_year'), 
-    '2016', true)
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_E-Mail_email'), 'o6l6w5ic2f@icznn.com')
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_select_months'), 
-    '11', true)
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Whatsapp_whatsapp'), GlobalVariable.wa_number)
 
-WebUI.click(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_date above 31 dec 2016'))
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Kata Sandi_password'), 
+    GlobalVariable.iqbal_pass)
+
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Konfirmasi kata sandi_password_confirmation'), 
+    GlobalVariable.iqbal_pass)
+
+WebUI.click(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Konfirmasi checkbox terms_and_condition'))
+
+WebUI.click(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_Daftar'))
 
 WebUI.delay(5)
-
-WebUI.verifyTextPresent('2017', true)
 
 WebUI.closeBrowser()
 

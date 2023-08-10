@@ -17,29 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
-WebUI.navigateToUrl('https://demo-app.online/')
-
-WebUI.click(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_Buat Akun'))
-
-WebUI.click(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Nama_name'))
-
-WebUI.click(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Tanggal lahir_birth_date'))
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_select_year'), 
-    '2016', true)
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_select_months'), 
-    '11', true)
-
-WebUI.click(findTestObject('Object Repository/Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_date above 31 dec 2016'))
-
-WebUI.delay(5)
-
-WebUI.verifyTextPresent('2017', true)
-
-WebUI.closeBrowser()
-
