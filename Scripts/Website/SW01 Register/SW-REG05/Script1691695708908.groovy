@@ -17,3 +17,34 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://demo-app.online/')
+
+WebUI.click(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_Buat Akun'))
+
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Nama_name'), GlobalVariable.nama_iqbal)
+
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Tanggal lahir_birth_date'), 
+    GlobalVariable.tgl_lhir)
+
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_E-Mail_email'), 'nlmue0ixq2@kzccv.com')
+
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Whatsapp_whatsapp'), '021752157766')
+
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Kata Sandi_password'), 
+    GlobalVariable.iqbal_pass)
+
+WebUI.setText(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Konfirmasi kata sandi_password_confirmation'), 
+    GlobalVariable.iqbal_pass)
+
+WebUI.click(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/input_Konfirmasi checkbox terms_and_condition'))
+
+WebUI.click(findTestObject('Web - Register/Page_Buat akun dan dapatkan akses di Coding.ID/button_Daftar'))
+
+WebUI.delay(5)
+
+WebUI.closeBrowser()
+
