@@ -19,4 +19,24 @@
       <initValue>''</initValue>
       <name>APItoken</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>repetitive</description>
+      <initValue>'password123'</initValue>
+      <name>iqbal_pass</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'iqbal'</initValue>
+      <name>nama_iqbal</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'11-08-2000'</initValue>
+      <name>tgl_lhir</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'081381629152'</initValue>
+      <name>wa_number</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
